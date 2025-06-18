@@ -1,0 +1,266 @@
+.logo {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #e9f6ed, #dff1e7);
+    }
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: white;
+      border-bottom: 1px solid #ddd;
+    }
+    .logo {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 24px;
+      margin-right: 8px;
+    }
+    .search-bar {
+      flex: 1;
+      margin: 0 2rem;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .sidebar {
+      width: 220px;
+      background: #fff;
+      height: 100vh;
+      position: fixed;
+      top: 64px;
+      left: 0;
+      padding: 1rem;
+      border-right: 1px solid #ddd;
+    }
+    .sidebar button,
+    .sidebar a {
+      display: block;
+      width: 100%;
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.5rem;
+      background: none;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #333;
+    }
+    .sidebar button:hover,
+    .sidebar a:hover {
+      background: #f0f5f3;
+    }
+    .main {
+      margin-left: 240px;
+      padding: 2rem;
+    }
+    .welcome-box {
+      background: #1c5936;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      font-size: 18px;
+      margin-bottom: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .climate {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .status-grid {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1rem;
+    }
+    .status-box {
+      text-align: center;
+    }
+    .status-box span {
+      font-size: 20px;
+      font-weight: bold;
+      display: block;
+    }
+    .recommendations ul {
+      padding-left: 1rem;
+    }
+    .recommendations li {
+      margin-bottom: 0.5rem;
+    }
+
+    .section {
+  transition: opacity 0.3s ease;
+    }
+
+  /* Tela inicio*/
+
+    .welcome-box h1 {
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    
+    .welcome-box h2 {
+      font-size: 1.2em;
+      font-weight: normal;
+      color: #555;
+    }
+    
+    hr {
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 1em 0;
+    }
+    
+    .plant-health {
+      text-align: center;
+    }
+    
+    .health-percentage {
+      font-size: 2em;
+      font-weight: bold;
+      margin: 0.5em 0;
+    }
+    
+    .health-status {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1em;
+    }
+    
+    .recommendations li {
+      margin-bottom: 1em;
+      padding-bottom: 1em;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .recommendations li:last-child {
+      border-bottom: none;
+    }
+
+    /*Premium*/
+    .premium-header {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+    
+    .premium-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5em;
+      margin-bottom: 2em;
+    }
+    
+    .feature-card {
+      background: #f8f9fa;
+      padding: 1.5em;
+      border-radius: 10px;
+      text-align: center;
+    }
+    
+    .premium-benefits {
+      background: #f1f8e9;
+      padding: 2em;
+      border-radius: 10px;
+      margin-bottom: 2em;
+    }
+    
+    .premium-benefits ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .premium-benefits li {
+      padding: 0.5em 0;
+      position: relative;
+      padding-left: 1.5em;
+    }
+    
+    .premium-benefits li:before {
+      content: "✓";
+      color: #4caf50;
+      position: absolute;
+      left: 0;
+    }
+    
+    .premium-price {
+      text-align: center;
+      font-size: 2em;
+      color: #4caf50;
+      margin: 1em 0;
+    }
+    
+    .testimonials {
+      margin: 2em 0;
+    }
+    
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1em;
+    }
+    
+    .testimonial-card {
+      background: white;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .premium-cta {
+      text-align: center;
+      margin: 3em 0;
+    }
+    
+    .premium-button {
+      background: #4caf50;
+      color: white;
+      border: none;
+      padding: 1em 2em;
+      font-size: 1.2em;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .premium-button:hover {
+      background: #3d8b40;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
