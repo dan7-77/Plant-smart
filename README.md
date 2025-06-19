@@ -9,7 +9,7 @@
 - Guilherme Amorim - 12300489
 - Henrique Araújo - 22301860
 - Rafael Caetano - 12303470
-- Pedro Rocha - Matricula
+- Pedro Rocha - 
 
 **Turma:** [3B1]
 
