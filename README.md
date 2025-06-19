@@ -8,8 +8,8 @@
 - Filipe Bora - 12300799
 - Guilherme Amorim - 12300489
 - Henrique Araújo - 22301860
-- Pedro Rocha - 
 - Rafael Caetano - 12303470
+- Pedro Rocha - Matricula
 
 **Turma:** [3B1]
 
