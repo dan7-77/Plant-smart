@@ -18,7 +18,7 @@
 - [ ] O sistema deve integrar sensores para coleta automática de dados do solo.
 - [ ] O sistema deve enviar alertas em caso de detecção de pragas por sensores conectados.
 - [ ] O sistema deve integrar previsão do tempo para ajudar no planejamento de irrigação.
-- [ ] O sistema deve possibilitar a integração com dispositivos móveis, como tablets e celulares.
+- [x] O sistema deve possibilitar a integração com dispositivos móveis, como tablets e celulares.
 - [ ] O sistema deve disponibilizar um painel de controle para acompanhamento em tempo real.
 - [ ] O sistema deve realizar análises preditivas baseadas nos dados históricos das plantações.
 - [ ] O sistema deve enviar notificações de alerta em caso de baixa umidade no solo.
