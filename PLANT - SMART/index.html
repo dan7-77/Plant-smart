@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="plant.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <body class="bg-gray-50">
+        <div class="flex h-screen overflow-hidden">
+            <!-- Sidebar -->
+            <div class="sidebar bg-green-800 text-white w-64 flex-shrink-0 hidden md:flex flex-col">
+                <div class="p-6 flex items-center">
+                    <div class="bg-white rounded-lg p-2 mr-3">
+                        <i ></i>
+                    </div>
+                    <h1 class="text-xl font-bold text-white">Plant Smart</h1>
+                </div>
+                <div class="flex-1 overflow-y-auto">
+                    <div class="px-4 py-2">
+                        <div class="text-xs uppercase font-semibold text-blue-200 mb-2"></div>
+                        <a href="#" class="sidebar-item flex items-center px-4 py-3 rounded-lg bg-white-700 text-white mb-1">
+                            <i></i>
+                            <span>Inicio</span>
+                        </a>
+                        <a href="#" class="sidebar-item flex items-center px-4 py-3 rounded-lg text-blue-100 hover:bg-white-700 mb-1">
+                            <!--ICONE-->
+                            <i></i>
+                            <span>Minhas Plantas</span>
+                        </a>
+                        <a href="#" class="sidebar-item flex items-center px-4 py-3 rounded-lg text-blue-100 hover:bg-white-700 mb-1">
+                           <!--ICONE-->
+                            <i></i>
+                            <span>Banco de plantas</span>
+                        </a>
+                        <a href="#" class="sidebar-item flex items-center px-4 py-3 rounded-lg text-blue-100 hover:bg-white-700 mb-1">
+                            <!--ICONE-->
+                            <i></i>
+                            <span>Premium</span>
+                        </a>
+                        <a href="#" class="sidebar-item flex items-center px-4 py-3 rounded-lg text-blue-100 hover:bg-white-700 mb-1">
+                            <!--ICONE-->
+                            <i></i>
+                            <span>Guia de emergência</span>
+                        </a>
+                    </div>
+                    <div class="px-4 py-2 mt-4">
+                        <div class="text-xs uppercase font-semibold text-blue-200 mb-2">Livre</div>
+                        <a href="#" class="sidebar-item flex items-center px-4 py-3 rounded-lg text-blue-100 hover:bg-white-700 mb-1">
+                            <!--ICONE-->
+                            <i></i>
+                            <span>hreheheh</span>
+                        </a>
+                        <a href="#" class="sidebar-item flex items-center px-4 py-3 rounded-lg text-blue-100 hover:bg-white-700 mb-1">
+                            <!--ICONE-->
+                            <i></i>
+                            <span>jhrjrjr</span>
+                        </a>
+                    </div>
+                    <div class="px-4 py-2 mt-4">
+                        <div class="text-xs uppercase font-semibold text-blue-200 mb-2">Configurações</div>
+                        <a href="#" class="sidebar-item flex items-center px-4 py-3 rounded-lg text-blue-100 hover:bg-white-700 mb-1">
+                           <!--ICONE-->
+                            <i></i>
+                            <span>Configurações</span>
+                        </a>
+                        <a href="#" class="sidebar-item flex items-center px-4 py-3 rounded-lg text-blue-100 hover:bg-white-700 mb-1">
+                            <!--ICONE-->
+                            <i></i>
+                            <span>Equipe</span>
+                        </a>
+                    </div>
+                </div>              
+            </div>
+            
+            <!-- Main Content -->
+            <div class="flex-1 overflow-auto">
+                <!-- Top Navigation -->
+                <header class="bg-white shadow-sm">
+                    <div class="flex items-center justify-between px-6 py-4">
+                        <div class="flex items-center">
+                            <button class="md:hidden mr-4 text-gray-600">
+                                <i class="fas fa-bars text-xl"></i>
+                            </button>
+                            
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="relative">
+                                <button class="p-2 rounded-full hover:bg-gray-100">
+                                    <i class="fas fa-bell text-gray-600"></i>
+                                    <div class="notification-badge">3</div>
+                                </button>
+                            </div>
+                            <div class="relative">
+                                <button class="p-2 rounded-full hover:bg-gray-100">
+                                    <i class="fas fa-envelope text-gray-600"></i>
+                                    <div class="notification-badge">5</div>
+                                </button>
+                            </div>
+                            <div class="hidden md:block">
+                                <div class="flex items-center">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-8 h-8 rounded-full mr-2">
+                                    <span class="text-sm font-medium">Admin User</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                
+                <!-- Main Dashboard Content -->
+                <main class="p-6">
+                    <!-- Seja bem vindo banner-->
+                    <div class="bg-gradient-to-r from-green-600 to-green-800 rounded-xl p-6 mb-6 text-white" class="welcome">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                            <div>
+                                <h1 class="text-2xl font-bold mb-2">Bem vindo ao seu jardim</h1>
+                                <p class="opacity-90">Assistente inteligente para acompanhar as suas plantas</p>
+                            </div>
+                            <button class="mt-4 md:mt-0 bg-white text-blue-800 px-6 py-2 rounded-lg font-medium hover:bg-opacity-90 transition">
+                                
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Tela inicial -->
+<h1>Clima de hoje</h1>
+    
+    <div class="weather-card">
+        <div class="weather-temp">24 °C</div>
+        <div class="weather-condition">Ensolarado</div>
+        <div class="weather-description">O dia está ensolarado. Considere verificar se suas plantas precisam de sombra.</div>
+    </div>
+    
+    <div class="divider"></div>
+    
+    <h2>Seu Jardim</h2>
+    <a href="#" class="section-link">Ver todas as plantas</a>
+    
+    <div class="divider"></div>
+    
+    <h3>Saúde Vegetal</h3>
+    
+    <table>
+        <tr>
+            <th colspan="2">Saúde geral das plantas</th>
+        </tr>
+        <tr>
+            <td>0 %</td>
+            <td>0 %</td>
+        </tr>
+        <tr>
+            <td class="status-critical">Crítico</td>
+            <td></td>
+        </tr>
+    </table>
+    
+    <table>
+        <tr>
+            <th></th>
+            <th>Alerta</th>
+            <th>Crítico</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="status-healthy">Saudável</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
+    <div class="divider"></div>
+    
+    <h3>Cronograma de rega</h3>
+    <a href="#" class="section-link">Ver programação completa</a>
+    
+    <div class="divider"></div>
+    
+    <h3>Recomendações de IA</h3>
+    <div class="recommendations">
+        <div class="recommendation-item">
+            <div class="recommendation-title">Otimizar a rega</div>
+            <div class="recommendation-text">Seu lírio-da-paz mostra sinais de excesso de água. Considere deixar o solo secar mais entre as regas.</div>
+        </div>
+        
+        <div class="recommendation-item">
+            <div class="recommendation-title">Ajuste de luz</div>
+            <div class="recommendation-text">Mova sua figueira-lira para mais perto de uma janela, pois ela precisa de mais luz para um crescimento ideal.</div>
+        </div>
+        
+        <div class="recommendation-item">
+            <div class="recommendation-title">Controle de umidade</div>
+            <div class="recommendation-text">Considere usar um umidificador para sua Monstera, especialmente durante os meses mais secos.</div>
+        </div>
+        
+        <a href="#" class="personalized-link">Obtenha recomendações mais personalizadas</a>
+    </div>
+
+
+
+    <script src="plant.js"></script>
+
+    <p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - <a href="https://enzostvs-deepsite.hf.space?remix=kritsanan/tourderwang-com" style="color: #fff;text-decoration: underline;" target="_blank" >🧬 Remix</a></p>
+</body>
+</html>
