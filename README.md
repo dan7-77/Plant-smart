@@ -13,7 +13,7 @@
 
 **Turma:** [3B1]
 
-- [x] O sistema deve permitir o cadastro de usuários, incluindo nome, e-mail e senha.
+- [ ] O sistema deve permitir o cadastro de usuários, incluindo nome, e-mail e senha.
 - [ ] O sistema deve alertar o usuário sobre riscos de seca com base em dados climáticos.
 - [ ] O sistema deve integrar sensores para coleta automática de dados do solo.
 - [ ] O sistema deve enviar alertas em caso de detecção de pragas por sensores conectados.
