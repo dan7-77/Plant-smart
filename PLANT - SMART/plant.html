@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="plant.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    
+    
+    
+   
+
+   
+    
+    <body class="bg-gray-50">
+    <div class="flex h-screen overflow-hidden">
+        <!-- Sidebar -->
+        <div class="sidebar bg-green-800 text-white w-64 flex-shrink-0 hidden md:flex flex-col">
+            <div class="p-6 flex items-center">
+                <div class="bg-white rounded-lg p-2 mr-3">
+                    <i></i>
+                </div>
+                <h1 class="text-xl font-bold text-white">Plant Smart</h1>
+            </div>
+            <div class="flex-1 overflow-y-auto">
+                <div class="px-4 py-2">
+                    <div class="text-xs uppercase font-semibold text-blue-200 mb-2"></div>
+                    <a href="#" class="sidebar-item flex items-center px-4 py-3 rounded-lg text-blue-100 hover:bg-white-700 mb-1 active" data-section="home">
+                        <!--ICONE-->
+                        <i></i>
+                        <span>Inicio</span>
+                    </a>
+                    <a href="#" class="sidebar-item flex items-center px-4 py-3 rounded-lg text-blue-100 hover:bg-white-700 mb-1" data-section="my-plants">
+                        <!--ICONE-->
+                        <i></i>
+                        <span>Minhas Plantas</span>
+                    </a>
+                    <a href="#" class="sidebar-item flex items-center px-4 py-3 rounded-lg text-blue-100 hover:bg-white-700 mb-1" data-section="plant-database">
+                        <!--ICONE-->
+                        <i class=""></i>
+                        <span>Banco de plantas</span>
+                    </a>
+                    <a href="#" class="sidebar-item flex items-center px-4 py-3 rounded-lg text-blue-100 hover:bg-white-700 mb-1" data-section="premium">
+                        <!--ICONE-->
+                        <i></i>
+                        <span>Premium</span>
+                    </a>
+                    <a href="#" class="sidebar-item flex items-center px-4 py-3 rounded-lg text-blue-100 hover:bg-white-700 mb-1" data-section="emergency-guide">
+                        <!--ICONE-->
+                        <i></i>
+                        <span>Guia de emergência</span>
+                    </a>
+                </div>
+                <div class="px-4 py-2 mt-4">
+                    <div class="text-xs uppercase font-semibold text-blue-200 mb-2">Livre</div>
+                    <a href="#" class="sidebar-item flex items-center px-4 py-3 rounded-lg text-blue-100 hover:bg-white-700 mb-1" data-section="free-1">
+                        <!--ICONE-->
+                        <i></i>
+                        <span>Dicas</span>
+                    </a>
+                   
+                </div>
+                <div class="px-4 py-2 mt-4">
+                    <div class="text-xs uppercase font-semibold text-blue-200 mb-2">Configurações</div>
+                    <a href="#" class="sidebar-item flex items-center px-4 py-3 rounded-lg text-blue-100 hover:bg-white-700 mb-1" data-section="settings">
+                        <!--ICONE-->
+                        <i></i>
+                        <span>Configurações</span>
+                    </a>
+                    <a href="#" class="sidebar-item flex items-center px-4 py-3 rounded-lg text-blue-100 hover:bg-white-700 mb-1" data-section="team">
+                        <!--ICONE-->
+                        <i></i>
+                        <span>Equipe</span>
+                    </a>
+                </div>
+            </div>              
+        </div>
+        
+       
+        <div class="flex-1 overflow-auto">
+            <!-- TOPO DO SITE -->
+            <header class="bg-white shadow-sm">
+                <div class="flex items-center justify-between px-6 py-4">
+                    <div class="flex items-center">
+                        <button class="md:hidden mr-4 text-gray-600" id="mobile-menu-button">
+                            <i class="fas fa-bars text-xl"></i>
+                        </button>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="relative">
+                            <button class="p-2 rounded-full hover:bg-gray-100">
+                                <i class="fas fa-bell text-gray-600"></i>
+                                <div class="notification-badge">3</div>
+                            </button>
+                        </div>
+                        <div class="relative">
+                            <button class="p-2 rounded-full hover:bg-gray-100">
+                                <i class="fas fa-envelope text-gray-600"></i>
+                                <div class="notification-badge">5</div>
+                            </button>
+                        </div>
+                        <div class="hidden md:block">
+                            <div class="flex items-center">
+                                <img src="" alt="" >
+                                <span class="text-sm font-medium">USUARIO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+      
+                <!-- Tela inicial -->
+                <div id="home" class="content-section active">
+                    <!-- Seja bem vindo banner-->
+                    <div class="bg-gradient-to-r from-green-600 to-green-800 rounded-xl p-6 mb-6 text-white welcome">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                            <div>
+                                <h1 class="text-2xl font-bold mb-2">Bem vindo ao seu jardim</h1>
+                                <p class="opacity-90">Assistente inteligente para acompanhar as suas plantas</p>
+                            </div>
+                            <button class="mt-4 md:mt-0 bg-white text-blue-800 px-6 py-2 rounded-lg font-medium hover:bg-opacity-90 transition">
+                                Explorar
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <h1>Clima de hoje</h1>
+                    
+                    <div class="weather-card">
+                        <div class="weather-temp">24 °C</div>
+                        <div class="weather-condition">Ensolarado</div>
+                        <div class="weather-description">O dia está ensolarado. Considere verificar se suas plantas precisam de sombra.</div>
+                    </div>
+                    
+                    <div class="divider"></div>
+                    
+                    <h2>Seu Jardim</h2>
+                    <a href="#" class="section-link">Ver todas as plantas</a>
+                    
+                    <div class="divider"></div>
+                    
+                    <h3>Saúde Vegetal</h3>
+                    
+                    <table>
+                        <tr>
+                            <th colspan="2">Saúde geral das plantas</th>
+                        </tr>
+                        <tr>
+                            <td>0 %</td>
+                            <td>0 %</td>
+                        </tr>
+                        <tr>
+                            <td class="status-critical">Crítico</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Alerta</th>
+                            <th>Crítico</th>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td class="status-healthy">Saudável</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    
+                    <div class="divider"></div>
+                    
+                    <h3>Cronograma de rega</h3>
+                    <a href="#" class="section-link">Ver programação completa</a>
+                    
+                    <div class="divider"></div>
+                    
+                    <h3>Recomendações de IA</h3>
+                    <div class="recommendations">
+                        <div class="recommendation-item">
+                            <div class="recommendation-title">Otimizar a rega</div>
+                            <div class="recommendation-text">Seu lírio-da-paz mostra sinais de excesso de água. Considere deixar o solo secar mais entre as regas.</div>
+                        </div>
+                        
+                        <div class="recommendation-item">
+                            <div class="recommendation-title">Ajuste de luz</div>
+                            <div class="recommendation-text">Mova sua figueira-lira para mais perto de uma janela, pois ela precisa de mais luz para um crescimento ideal.</div>
+                        </div>
+                        
+                        <div class="recommendation-item">
+                            <div class="recommendation-title">Controle de umidade</div>
+                            <div class="recommendation-text">Considere usar um umidificador para sua Monstera, especialmente durante os meses mais secos.</div>
+                        </div>
+                        
+                        <a href="#" class="personalized-link">Obtenha recomendações mais personalizadas</a>
+                    </div>
+                </div>
+
+               
+                <div id="my-plants" class="content-section">
+                    <div class="bg-gradient-to-r from-green-600 to-green-800 rounded-xl p-6 mb-6 text-white welcome">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                            <div>
+                                <h1 class="text-2xl font-bold mb-2">Minhas Plantas</h1>
+                                <p class="opacity-90">Gerencie todas as suas plantas em um só lugar</p>
+                            </div>
+                            <button class="mt-4 md:mt-0 bg-white text-blue-800 px-6 py-2 rounded-lg font-medium hover:bg-opacity-90 transition">
+                                Adicionar Planta
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-leaf text-green-600 text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg">Lírio-da-paz</h3>
+                                    <p class="text-gray-500 text-sm"></p>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>Saúde</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-green-500 h-2 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <div>
+                                    <p class="text-gray-500">Última rega</p>
+                                    <p>2 dias atrás</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500">Próxima rega</p>
+                                    <p>em 2 dias</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-leaf text-green-600 text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg">Monstera</h3>
+                                    <p class="text-gray-500 text-sm">Monstera deliciosa</p>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>Saúde</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-green-500 h-2 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <div>
+                                    <p class="text-gray-500">Última rega</p>
+                                    <p>3 dias atrás</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500">Próxima rega</p>
+                                    <p>em 4 dias</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-leaf text-green-600 text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg">Figueira-lira</h3>
+                                    <p class="text-gray-500 text-sm">Ficus lyrata</p>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>Saúde</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-yellow-500 h-2 rounded-full" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <div>
+                                    <p class="text-gray-500">Última rega</p>
+                                    <p>1 dia atrás</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500">Próxima rega</p>
+                                    <p>em 6 dias</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="plant-database" class="content-section">
+                    <div class="bg-gradient-to-r from-green-600 to-green-800 rounded-xl p-6 mb-6 text-white welcome">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                            <div>
+                                <h1 class="text-2xl font-bold mb-2">Banco de Plantas</h1>
+                                <p class="opacity-90">Explore nossa extensa coleção de plantas</p>
+                            </div>
+                            <div class="mt-4 md:mt-0 relative">
+                                <input type="text" placeholder="Pesquisar plantas..." class="px-4 py-2 rounded-lg w-full md:w-64">
+                                <i class="fas fa-search absolute right-3 top-3 text-gray-500"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Monstera" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-2">Monstera deliciosa</h3>
+                                <p class="text-gray-600 text-sm mb-4">Planta tropical com folhas grandes e fenestradas. Ideal para interiores com luz indireta.</p>
+                                <div class="flex justify-between text-sm">
+                                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded">Fácil cuidado</span>
+                                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Interior</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1598880940080-ff9a29891b85?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Lírio-da-paz" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-2">Lírio-da-paz</h3>
+                                <p class="text-gray-600 text-sm mb-4">Planta de interior que purifica o ar. Flores brancas elegantes e folhas verdes brilhantes.</p>
+                                <div class="flex justify-between text-sm">
+                                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded">Fácil cuidado</span>
+                                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Interior</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="https://www.google.com/imgres?q=figueira%20lira&imgurl=https%3A%2F%2Fcdn.awsli.com.br%2F1982%2F1982052%2Fproduto%2F140322867%2Fc4504fb0b8.jpg&imgrefurl=https%3A%2F%2Fwww.plantadelivery.com.br%2Ffigueira-lira%3Fsrsltid%3DAfmBOopUYMzMihVQrxKZUhYWSvnyibFMWkZtyrEMYHsNwHKX0rOD_Mjb&docid=BdQnKUXgMuhU9M&tbnid=GqGUYE5LFbrUMM&vet=12ahUKEwjS8O3DzJmOAxUyAbkGHVJCCvYQM3oECBoQAA..i&w=420&h=420&hcb=2&ved=2ahUKEwjS8O3DzJmOAxUyAbkGHVJCCvYQM3oECBoQAA" alt="Figueira-lira" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="font-bold text-lg mb-2">Figueira-lira</h3>
+                                <p class="text-gray-600 text-sm mb-4">Planta de folhas grandes em forma de lira. Requer luz brilhante e rega moderada.</p>
+                                <div class="flex justify-between text-sm">
+                                    <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Médio cuidado</span>
+                                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Interior</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium  -->
+                <div id="premium" class="content-section">
+                    <div class="bg-gradient-to-r from-green-600 to-green-800 rounded-xl p-6 mb-6 text-white welcome">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                            <div>
+                                <h1 class="text-2xl font-bold mb-2">Plant Smart Premium</h1>
+                                <p class="opacity-90">Desbloqueie recursos exclusivos para cuidar melhor das suas plantas</p>
+                            </div>
+                            <button class="mt-4 md:mt-0 bg-white text-blue-800 px-6 py-2 rounded-lg font-medium hover:bg-opacity-90 transition">
+                                Assinar Agora
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                            <h3 class="font-bold text-xl mb-4">Básico</h3>
+                            <p class="text-3xl font-bold mb-4">Grátis</p>
+                            <ul class="text-left mb-6">
+                                <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Acompanhe até 5 plantas</li>
+                                <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Lembretes básicos de rega</li>
+                                <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Acesso ao banco de plantas</li>
+                                <li class="mb-2"><i class="fas fa-times text-gray-300 mr-2"></i> Diagnóstico avançado</li>
+                                <li class="mb-2"><i class="fas fa-times text-gray-300 mr-2"></i> Recomendações personalizadas</li>
+                            </ul>
+                            <button class="w-full bg-gray-200 text-gray-800 py-2 rounded-lg">Seu Plano Atual</button>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow-lg p-6 text-center border-2 border-green-500 transform scale-105">
+                            <div class="bg-green-500 text-white py-1 px-4 rounded-full inline-block mb-4 text-sm font-medium">RECOMENDADO</div>
+                            <h3 class="font-bold text-xl mb-4">Premium</h3>
+                            <p class="text-3xl font-bold mb-4">R$9,99<span class="text-sm font-normal">/mês</span></p>
+                            <ul class="text-left mb-6">
+                                <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Acompanhe plantas ilimitadas</li>
+                                <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Lembretes inteligentes de cuidados</li>
+                                <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Acesso completo ao banco de plantas</li>
+                                <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Diagnóstico avançado de saúde</li>
+                                <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Recomendações personalizadas</li>
+                            </ul>
+                            <button class="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 transition">Assinar Premium</button>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                            <h3 class="font-bold text-xl mb-4">Plano anual</h3>
+                            <p class="text-3xl font-bold mb-4">R$19,99<span class="text-sm font-normal">/mês</span></p>
+                            <ul class="text-left mb-6">
+                                <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Tudo no Premium</li>
+                               
+                                <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Jardim compartilhado</li>
+                                <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Relatórios mensais</li>
+                                <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Suporte prioritário</li>
+                            </ul>
+                            <button class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition">Assinar Plano anual</button>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="font-bold text-lg mb-4">Perguntas Frequentes</h3>
+                        <div class="space-y-4">
+                            <div class="border-b pb-4">
+                                <h4 class="font-medium mb-2">Posso cancelar a qualquer momento?</h4>
+                                <p class="text-gray-600">Sim, você pode cancelar sua assinatura Premium a qualquer momento sem taxas adicionais.</p>
+                            </div>
+                            <div class="border-b pb-4">
+                                <h4 class="font-medium mb-2">Como funciona o diagnóstico avançado?</h4>
+                                <p class="text-gray-600">Nosso sistema analisa fotos das suas plantas e dados de sensores para identificar problemas como pragas, doenças ou deficiências nutricionais.</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other sections would follow the same pattern -->
+                <div id="emergency-guide" class="content-section">
+                    <div class="bg-gradient-to-r from-green-600 to-green-800 rounded-xl p-6 mb-6 text-white welcome">
+                        <h1 class="text-2xl font-bold mb-2">Guia de Emergência</h1>
+                        <p class="opacity-90">Soluções rápidas para problemas comuns de plantas</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <p>Conteúdo do guia de emergência será exibido aqui.</p>
+                    </div>
+                </div>
+
+                <div id="free-1" class="content-section">
+                    <div class="bg-gradient-to-r from-green-600 to-green-800 rounded-xl p-6 mb-6 text-white welcome">
+                        <h1 class="text-2xl font-bold mb-2">Dicas</h1>
+                        <p class="opacity-90">Dicas úteis para cuidar melhor das suas plantas</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <p>Conteúdo de dicas será exibido aqui.</p>
+                    </div>
+                </div>
+
+               
+
+                <div id="settings" class="content-section">
+                    <div class="bg-gradient-to-r from-green-600 to-green-800 rounded-xl p-6 mb-6 text-white welcome">
+                        <h1 class="text-2xl font-bold mb-2">Configurações</h1>
+                        <p class="opacity-90">Personalize sua experiência no Plant Smart</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <p>Configurações da conta serão exibidas aqui.</p>
+                    </div>
+                </div>
+
+                <div id="team" class="content-section">
+                    <div class="bg-gradient-to-r from-green-600 to-green-800 rounded-xl p-6 mb-6 text-white welcome">
+                        <h1 class="text-2xl font-bold mb-2">Equipe</h1>
+                        <p class="opacity-90">Conheça o time por trás do Plant Smart</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <p>Informações sobre a equipe serão exibidas aqui.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="plant.js"></script>
+
+    <p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - <a href="https://enzostvs-deepsite.hf.space?remix=kritsanan/tourderwang-com" style="color: #fff;text-decoration: underline;" target="_blank" >🧬 Remix</a></p>
+</body>
+</html>
