@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Sidebar navigation
+// BARRA DE NAVEGAÇÃO
             const sidebarItems = document.querySelectorAll('.sidebar-item');
             const contentSections = document.querySelectorAll('.content-section');
             
