@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - PlantSmart</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div class="left">
+        <div class="logo">
+            <img src="logo.png" alt="PlantSmart Logo" />
+            <span>PlantSmart</span>
+        </div>
+        
+        <div class="description">Seu assistente inteligente para cuidados com plantas</div>
+
+        <div class="feature">
+            <div class="feature-icon">🌿</div>
+            <div class="feature-text">
+                <strong>Monitoramento Inteligente</strong>
+                Acompanhe a saúde das suas plantas em tempo real
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🔔</div>
+            <div class="feature-text">
+                <strong>Lembretes Personalizados</strong>
+                Nunca mais esqueça de regar suas plantas
+            </div>
+        </div>
+    </div>
+
+    <div class="login-box">
+        <h2>Crie sua conta</h2>
+        
+        <button class="google-button">
+            <img src="logo.png" alt="Google" />
+            Cadastrar com Google
+        </button>
+        
+        <div class="divider">ou</div>
+        
+        <form id="registerForm">
+            <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+            <div id="nameError" class="error-message"></div>
+            
+            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+            <div id="emailError" class="error-message"></div>
+            
+            <input type="password" id="password" name="password" placeholder="Sua senha" required>
+            <div id="passwordError" class="error-message"></div>
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+        
+        <div class="login-link">
+            Já tem uma conta? <a href="#">Entrar</a>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 PlantSmart. Todos os direitos reservados.
+    </footer>
+
+    <script src="casdastro.js"></script>
+</body>
+</html>
